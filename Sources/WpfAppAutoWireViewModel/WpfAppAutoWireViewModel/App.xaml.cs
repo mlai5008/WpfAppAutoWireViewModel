@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using System.Windows;
+using WpfAppAutoWireViewModel.Infrastructure.Interfaces.ViewModels;
 using WpfAppAutoWireViewModel.Infrastructure.Interfaces.Views;
 using WpfAppAutoWireViewModel.Startup;
 
@@ -16,13 +17,8 @@ namespace WpfAppAutoWireViewModel
             Bootstrapper bootstrapper = new Bootstrapper();
             IContainer container = bootstrapper.Bootstrap();
 
-            //DataTemplateManager dataTemplateManager = new DataTemplateManager();
-            //dataTemplateManager.RegisterDataTemplate(typeof(IBlackViewModel), container.Resolve<IBlackView>());
-            //dataTemplateManager.RegisterDataTemplate(typeof(IWhiteViewModel), container.Resolve<IWhiteView>());
-
-
             IMainWindow mainWindow = container.Resolve<IMainWindow>();
-            //mainWindow.DataContext = container.Resolve<IMainViewModel>();
+            mainWindow.DataContext = container.Resolve<IMainViewModel>();
             mainWindow.Show();
 
             base.OnStartup(e);

@@ -7,8 +7,8 @@ namespace WpfAppAutoWireViewModel.Startup
     {
         #region Consts
         private const string ViewsAssembly = "WpfAppAutoWireViewModel.Views.dll";
-        //private const string ViewModelsAssembly = "WpfAppViewModelFirst.ViewModels.dll";
-        //private const string CustomizationAssembly = "WpfAppViewModelFirst.Customization.dll";
+        private const string ViewModelsAssembly = "WpfAppAutoWireViewModel.ViewModels.dll";
+        //private const string CustomizationAssembly = "WpfAppAutoWireViewModel.Customization.dll";
         #endregion
 
         #region Methods
@@ -25,7 +25,7 @@ namespace WpfAppAutoWireViewModel.Startup
             foreach (string assembly in new string[]
             {
                 ViewsAssembly,
-                //ViewModelsAssembly,
+                ViewModelsAssembly,
                 //CustomizationAssembly
             })
             {
