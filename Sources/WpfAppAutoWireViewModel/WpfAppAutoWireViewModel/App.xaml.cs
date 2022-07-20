@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Autofac;
 using System.Windows;
+using WpfAppAutoWireViewModel.Infrastructure.Interfaces.Views;
+using WpfAppAutoWireViewModel.Startup;
 
 namespace WpfAppAutoWireViewModel
 {
@@ -13,5 +10,22 @@ namespace WpfAppAutoWireViewModel
     /// </summary>
     public partial class App : Application
     {
+
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            Bootstrapper bootstrapper = new Bootstrapper();
+            IContainer container = bootstrapper.Bootstrap();
+
+            //DataTemplateManager dataTemplateManager = new DataTemplateManager();
+            //dataTemplateManager.RegisterDataTemplate(typeof(IBlackViewModel), container.Resolve<IBlackView>());
+            //dataTemplateManager.RegisterDataTemplate(typeof(IWhiteViewModel), container.Resolve<IWhiteView>());
+
+
+            IMainWindow mainWindow = container.Resolve<IMainWindow>();
+            //mainWindow.DataContext = container.Resolve<IMainViewModel>();
+            mainWindow.Show();
+
+            base.OnStartup(e);
+        }
     }
 }

@@ -6,4 +6,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WpfAppAutoWireViewModel.Infrastructure\WpfAppAutoWireViewModel.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
