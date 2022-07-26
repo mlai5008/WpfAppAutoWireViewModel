@@ -1,18 +1,18 @@
-﻿using System.Windows;
+﻿using System.Windows.Controls;
 using WpfAppAutoWireViewModel.Infrastructure.Interfaces.Views;
 
 namespace WpfAppAutoWireViewModel.Views.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Логика взаимодействия для UserListView.xaml
     /// </summary>
-    public partial class MainWindow : Window, IMainWindow
+    public partial class UserListView : UserControl, IUserListView
     {
         #region Ctor
-        public MainWindow()
+        public UserListView()
         {
             InitializeComponent();
-        } 
+        }
         #endregion
     }
 }

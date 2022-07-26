@@ -10,6 +10,8 @@ namespace WpfAppAutoWireViewModel.Views
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<MainWindow>().As<IMainWindow>().SingleInstance();
+            builder.RegisterType<UserListView>().As<IUserListView>().SingleInstance();
+            builder.RegisterType<UserDetailsView>().As<IUserDetailsView>().SingleInstance();
 
             base.Load(builder);
         }

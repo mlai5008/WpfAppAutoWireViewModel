@@ -3,12 +3,89 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:WpfAppAutoWireViewModel.Views.Views"
+        xmlns:views1="clr-namespace:WpfAppAutoWireViewModel.Infrastructure.Interfaces.Views;assembly=WpfAppAutoWireViewModel.Infrastructure"
+        xmlns:dataTemplateSelectors="clr-namespace:WpfAppAutoWireViewModel.Views.DataTemplateSelectors"
+        xmlns:selector="clr-namespace:WpfAppAutoWireViewModel.Views.DataTemplateSelectors"
         mc:Ignorable="d"
         Title="{Binding Title}" 
         Height="450"
         Width="800"
         WindowStartupLocation="CenterScreen">
-    <Grid Background="RosyBrown">
+    <!--<Window.Resources>
+        --><!--<DataTemplate DataType="{x:Type views1:IUserListView}" >
+            <views:UserListView></views:UserListView>
+        </DataTemplate>--><!--
+        <DataTemplate x:Key="UserList" DataType="{x:Type views1:IUserListView}">
+            <views:UserListView ></views:UserListView>
+            --><!--<TextBlock Text="Uyghnj" FontSize="24"></TextBlock>--><!--
+        </DataTemplate>
+        <DataTemplate x:Key="UserDetails" DataType="{x:Type views1:IUserDetailsView}">
+            <views:UserDetailsView ></views:UserDetailsView>
+        </DataTemplate>
+    </Window.Resources>-->
 
+    
+
+    <Grid Background="RosyBrown">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "*"/>
+            <ColumnDefinition Width = "*"/>
+        </Grid.ColumnDefinitions>
+        <!--<views:UserListView Grid.Column="0" Margin="5" />-->
+        <!--<views1:IUserList Grid.Column="0" Margin="5"/>-->
+        <!--<views:UserDetails Grid.Column="1" Margin="5"/>-->
+
+        <!--<Grid.Resources>
+            <DataTemplate x:Key="UserList" DataType="{x:Type views1:IUserListView}">
+                <views:UserListView ></views:UserListView>
+                --><!--<TextBlock Text="Uyghnj" FontSize="24"></TextBlock>--><!--
+            </DataTemplate>
+        </Grid.Resources>-->
+        
+        <ContentControl Grid.Column="0" 
+                        Margin="5"
+                        Content="{Binding UserListView, UpdateSourceTrigger=PropertyChanged}">
+            <!--<ContentControl.ContentTemplateSelector>
+                <dataTemplateSelectors:ViewTemplateSelector />
+            </ContentControl.ContentTemplateSelector>-->
+            
+            <!--<ContentControl.ContentTemplateSelector>
+                <selector:TemplateByTypeSelector.Templates>
+                    <dataTemplateSelectors:TemplateForType Type="{x:Type views1:IUserListView}" DataTemplate="{StaticResource ff}"></dataTemplateSelectors:TemplateForType>
+                </selector:TemplateByTypeSelector.Templates>
+            </ContentControl.ContentTemplateSelector>-->
+
+            <!--<ContentControl.ContentTemplateSelector>
+                <selector:TemplateByTypeSelector>
+                    <selector:TemplateByTypeSelector.Templates>
+                        <selector:TemplateForType Type="{x:Type views1:IUserListView}" DataTemplate="{StaticResource UserList}"/>
+                    </selector:TemplateByTypeSelector.Templates>
+                </selector:TemplateByTypeSelector>
+            </ContentControl.ContentTemplateSelector>-->
+
+            <!--<ContentControl.ContentTemplateSelector>
+                <selector:TemplateByTypeSelector>
+                    
+                </selector:TemplateByTypeSelector>
+            </ContentControl.ContentTemplateSelector>-->
+
+        </ContentControl>
+
+        <!--<ContentControl Grid.Column="1" Margin="5" Content="{Binding UserV}">
+            <ContentControl.ContentTemplateSelector>
+                <selector:TemplateByTypeSelector>
+                    <selector:TemplateByTypeSelector.Templates>
+                        <selector:TemplateForType Type="{x:Type views1:IUserDetailsView}" DataTemplate="{StaticResource UserDetails}"/>
+                    </selector:TemplateByTypeSelector.Templates>
+                </selector:TemplateByTypeSelector>
+            </ContentControl.ContentTemplateSelector>
+        </ContentControl>-->
+        
+        <!--<TextBlock Text="Ytrr" Grid.Column="0" Margin="5"></TextBlock>-->
+
+        <ContentControl Grid.Column="1"
+                        Margin="5"
+                        Content="{Binding Path=UserDetailsView, UpdateSourceTrigger=PropertyChanged}"/>
     </Grid>
 </Window>

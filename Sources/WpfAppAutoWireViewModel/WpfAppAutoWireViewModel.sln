@@ -3,9 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppAutoWireViewModel", "WpfAppAutoWireViewModel\WpfAppAutoWireViewModel.csproj", "{DEA527BE-75CA-40BF-AD7D-7D5526C9D290}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppAutoWireViewModel", "WpfAppAutoWireViewModel\WpfAppAutoWireViewModel.csproj", "{DEA527BE-75CA-40BF-AD7D-7D5526C9D290}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C02AA81D-0342-4418-B04B-F016C4C1728C} = {C02AA81D-0342-4418-B04B-F016C4C1728C}
+		{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA} = {FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA}
 		{0850F3F0-7288-480D-9F73-710E6351E3F3} = {0850F3F0-7288-480D-9F73-710E6351E3F3}
 	EndProjectSection
 EndProject
@@ -13,15 +14,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_Shell", "00_Shell", "{31
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Views", "01_Views", "{C6CE3000-B8B8-494E-A21C-711CBC8D93DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppAutoWireViewModel.Views", "WpfAppAutoWireViewModel.Views\WpfAppAutoWireViewModel.Views.csproj", "{0850F3F0-7288-480D-9F73-710E6351E3F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppAutoWireViewModel.Views", "WpfAppAutoWireViewModel.Views\WpfAppAutoWireViewModel.Views.csproj", "{0850F3F0-7288-480D-9F73-710E6351E3F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_Infrastructure", "03_Infrastructure", "{2BAEE429-7F41-4876-9AB9-2744B2A7568C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppAutoWireViewModel.Infrastructure", "WpfAppAutoWireViewModel.Infrastructure\WpfAppAutoWireViewModel.Infrastructure.csproj", "{B35241CF-940C-4224-9D3F-ECB5DB611EB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppAutoWireViewModel.Infrastructure", "WpfAppAutoWireViewModel.Infrastructure\WpfAppAutoWireViewModel.Infrastructure.csproj", "{B35241CF-940C-4224-9D3F-ECB5DB611EB1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_ViewModels", "02_ViewModels", "{D4850071-16F5-4584-ADF7-AF464053EDE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppAutoWireViewModel.ViewModels", "WpfAppAutoWireViewModel.ViewModels\WpfAppAutoWireViewModel.ViewModels.csproj", "{C02AA81D-0342-4418-B04B-F016C4C1728C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppAutoWireViewModel.ViewModels", "WpfAppAutoWireViewModel.ViewModels\WpfAppAutoWireViewModel.ViewModels.csproj", "{C02AA81D-0342-4418-B04B-F016C4C1728C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04_Services", "04_Services", "{3B61358A-7536-47DD-BA6F-70A241CE6765}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppAutoWireViewModel.Services", "WpfAppAutoWireViewModel.Services\WpfAppAutoWireViewModel.Services.csproj", "{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_Customizations", "05_Customizations", "{65420080-708A-494C-A22B-D7FF6FC19084}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +52,10 @@ Global
 		{C02AA81D-0342-4418-B04B-F016C4C1728C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C02AA81D-0342-4418-B04B-F016C4C1728C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C02AA81D-0342-4418-B04B-F016C4C1728C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,6 +65,7 @@ Global
 		{0850F3F0-7288-480D-9F73-710E6351E3F3} = {C6CE3000-B8B8-494E-A21C-711CBC8D93DF}
 		{B35241CF-940C-4224-9D3F-ECB5DB611EB1} = {2BAEE429-7F41-4876-9AB9-2744B2A7568C}
 		{C02AA81D-0342-4418-B04B-F016C4C1728C} = {D4850071-16F5-4584-ADF7-AF464053EDE5}
+		{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA} = {3B61358A-7536-47DD-BA6F-70A241CE6765}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {014ECC54-98B7-4448-950E-19B430BA3CAE}

@@ -1,16 +1,11 @@
 ﻿using Autofac;
 using System.Reflection;
+using WpfAppAutoWireViewModel.Infrastructure.Constants;
 
 namespace WpfAppAutoWireViewModel.Startup
 {
     public class Bootstrapper
     {
-        #region Consts
-        private const string ViewsAssembly = "WpfAppAutoWireViewModel.Views.dll";
-        private const string ViewModelsAssembly = "WpfAppAutoWireViewModel.ViewModels.dll";
-        //private const string CustomizationAssembly = "WpfAppAutoWireViewModel.Customization.dll";
-        #endregion
-
         #region Methods
         public IContainer Bootstrap()
         {
@@ -24,9 +19,10 @@ namespace WpfAppAutoWireViewModel.Startup
         {
             foreach (string assembly in new string[]
             {
-                ViewsAssembly,
-                ViewModelsAssembly,
-                //CustomizationAssembly
+                AppProjectName.ViewsAssembly,
+                AppProjectName.ViewModelsAssembly,
+                AppProjectName.ServicesAssembly,
+                //AppProjectName.CustomizationAssembly
             })
             {
                 builder.RegisterAssemblyModules(Assembly.LoadFrom(assembly));

@@ -17,6 +17,8 @@ namespace WpfAppAutoWireViewModel
             Bootstrapper bootstrapper = new Bootstrapper();
             IContainer container = bootstrapper.Bootstrap();
 
+            //IUserListView userListView = container.Resolve<IUserListView>();
+
             IMainWindow mainWindow = container.Resolve<IMainWindow>();
             mainWindow.DataContext = container.Resolve<IMainViewModel>();
             mainWindow.Show();
