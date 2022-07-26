@@ -6,13 +6,17 @@ namespace WpfAppAutoWireViewModel.ViewModels.ViewModels
 {
     public class UserListViewModel : BaseViewModel, IUserListViewModel
     {
+        #region Ctor
         public UserListViewModel()
         {
-            Users = new ObservableCollection<string>(){"A", "B"};
-        }
+            Users = new ObservableCollection<string>() { "A", "B" };
+        } 
+        #endregion
 
+        #region Properties
         public ObservableCollection<string> Users { get; set; }
 
-        public string TextA => "TextA";
+        public string TextA => "TextA"; 
+        #endregion
     }
 }

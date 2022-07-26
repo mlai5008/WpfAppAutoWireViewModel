@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppAutoWireViewModel", "WpfAppAutoWireViewModel\WpfAppAutoWireViewModel.csproj", "{DEA527BE-75CA-40BF-AD7D-7D5526C9D290}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C02AA81D-0342-4418-B04B-F016C4C1728C} = {C02AA81D-0342-4418-B04B-F016C4C1728C}
+		{40783979-F68F-4515-A819-488E77AA1799} = {40783979-F68F-4515-A819-488E77AA1799}
 		{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA} = {FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA}
 		{0850F3F0-7288-480D-9F73-710E6351E3F3} = {0850F3F0-7288-480D-9F73-710E6351E3F3}
 	EndProjectSection
@@ -29,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppAutoWireViewModel.Services", "WpfAppAutoWireViewModel.Services\WpfAppAutoWireViewModel.Services.csproj", "{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_Customizations", "05_Customizations", "{65420080-708A-494C-A22B-D7FF6FC19084}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppAutoWireViewModel.Customizations", "WpfAppAutoWireViewModel.Customizations\WpfAppAutoWireViewModel.Customizations.csproj", "{40783979-F68F-4515-A819-488E77AA1799}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,6 +59,10 @@ Global
 		{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40783979-F68F-4515-A819-488E77AA1799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40783979-F68F-4515-A819-488E77AA1799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40783979-F68F-4515-A819-488E77AA1799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40783979-F68F-4515-A819-488E77AA1799}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +73,7 @@ Global
 		{B35241CF-940C-4224-9D3F-ECB5DB611EB1} = {2BAEE429-7F41-4876-9AB9-2744B2A7568C}
 		{C02AA81D-0342-4418-B04B-F016C4C1728C} = {D4850071-16F5-4584-ADF7-AF464053EDE5}
 		{FDBA3DEB-F2DB-41F3-9948-EE618C9AC9BA} = {3B61358A-7536-47DD-BA6F-70A241CE6765}
+		{40783979-F68F-4515-A819-488E77AA1799} = {65420080-708A-494C-A22B-D7FF6FC19084}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {014ECC54-98B7-4448-950E-19B430BA3CAE}

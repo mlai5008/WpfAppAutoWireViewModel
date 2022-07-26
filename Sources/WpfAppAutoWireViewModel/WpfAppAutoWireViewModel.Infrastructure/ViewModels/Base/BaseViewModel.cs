@@ -7,7 +7,6 @@ namespace WpfAppAutoWireViewModel.Infrastructure.ViewModels.Base
     public class BaseViewModel : IViewModel
     {
         #region Methods
-
         public bool SetField<TPropety>(ref TPropety field, TPropety newValue, string propertyName = null)
         {
             if (newValue == null && field == null) return false;

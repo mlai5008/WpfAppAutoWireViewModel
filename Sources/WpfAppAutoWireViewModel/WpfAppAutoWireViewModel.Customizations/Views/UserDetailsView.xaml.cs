@@ -1,10 +1,10 @@
 ﻿using System.Windows.Controls;
 using WpfAppAutoWireViewModel.Infrastructure.Interfaces.Views;
 
-namespace WpfAppAutoWireViewModel.Views.Views
+namespace WpfAppAutoWireViewModel.Customizations.Views
 {
     /// <summary>
-    /// Логика взаимодействия для UserDetails.xaml
+    /// Логика взаимодействия для UserDetailsView.xaml
     /// </summary>
     public partial class UserDetailsView : UserControl, IUserDetailsView
     {

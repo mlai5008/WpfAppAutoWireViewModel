@@ -5,13 +5,18 @@ namespace WpfAppAutoWireViewModel.ViewModels.ViewModels
 {
     public class UserDetailsViewModel : BaseViewModel, IUserDetailsViewModel
     {
+        #region Fields
         private string _details;
+        #endregion
 
+        #region Ctor
         public UserDetailsViewModel()
         {
             Details = "Details";
         }
+        #endregion
 
+        #region Properties
         public string Details
         {
             get => _details;
@@ -20,6 +25,7 @@ namespace WpfAppAutoWireViewModel.ViewModels.ViewModels
                 _details = value;
                 OnPropertyChanged();
             }
-        }
+        } 
+        #endregion
     }
 }

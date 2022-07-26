@@ -22,7 +22,7 @@ namespace WpfAppAutoWireViewModel.Startup
                 AppProjectName.ViewsAssembly,
                 AppProjectName.ViewModelsAssembly,
                 AppProjectName.ServicesAssembly,
-                //AppProjectName.CustomizationAssembly
+                AppProjectName.CustomizationAssembly
             })
             {
                 builder.RegisterAssemblyModules(Assembly.LoadFrom(assembly));

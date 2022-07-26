@@ -7,7 +7,7 @@
         public const string ViewsAssembly = "WpfAppAutoWireViewModel.Views.dll";
         public const string ViewModelsAssembly = "WpfAppAutoWireViewModel.ViewModels.dll";
         public const string ServicesAssembly = "WpfAppAutoWireViewModel.Services.dll";
-        public const string CustomizationAssembly = "WpfAppAutoWireViewModel.Customization.dll";
+        public const string CustomizationAssembly = "WpfAppAutoWireViewModel.Customizations.dll";
         #endregion
     }
 }

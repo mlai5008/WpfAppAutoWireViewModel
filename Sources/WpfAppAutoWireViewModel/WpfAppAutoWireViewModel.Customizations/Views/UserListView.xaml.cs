@@ -1,15 +1,15 @@
 ﻿using System.Windows.Controls;
 using WpfAppAutoWireViewModel.Infrastructure.Interfaces.Views;
 
-namespace WpfAppAutoWireViewModel.Views.Views
+namespace WpfAppAutoWireViewModel.Customizations.Views
 {
     /// <summary>
-    /// Логика взаимодействия для UserDetails.xaml
+    /// Логика взаимодействия для UserListView.xaml
     /// </summary>
-    public partial class UserDetailsView : UserControl, IUserDetailsView
+    public partial class UserListView : UserControl, IUserListView
     {
         #region Ctor
-        public UserDetailsView()
+        public UserListView()
         {
             InitializeComponent();
         } 

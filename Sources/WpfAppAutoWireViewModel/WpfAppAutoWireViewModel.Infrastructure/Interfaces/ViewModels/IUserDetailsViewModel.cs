@@ -3,7 +3,5 @@
 namespace WpfAppAutoWireViewModel.Infrastructure.Interfaces.ViewModels
 {
     public interface IUserDetailsViewModel : IViewModel
-    {
-        
-    }
+    { }
 }
