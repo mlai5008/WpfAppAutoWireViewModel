@@ -7,6 +7,31 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" CornerRadius="20" Background="DarkKhaki">
+            <ListBox Margin="10"
+                     ItemsSource="{Binding Users}"
+                     FontSize="24"
+                     BorderBrush="Khaki">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="0,2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="100" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0">
+                                <TextBlock Text="{Binding Name}" Margin="0,0,10,0" />
+                                <TextBlock Text="{Binding Company}" />
+                            </StackPanel>
+                            <TextBlock Grid.Column="1" Text="{Binding Age}" />
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
     </Grid>
 </UserControl>

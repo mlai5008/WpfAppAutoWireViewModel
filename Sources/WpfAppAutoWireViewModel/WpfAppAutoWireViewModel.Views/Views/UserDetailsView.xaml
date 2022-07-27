@@ -7,7 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="Yellow">
-        <TextBlock Text="{Binding Details}" FontSize="24" FontWeight="Black"></TextBlock>
-            
+        <TextBlock Text="{Binding Details}"
+                   FontSize="24"
+                   FontWeight="Black"
+                   Margin="10"/>
     </Grid>
 </UserControl>
